@@ -1,4 +1,4 @@
-🚀 Next.js MongoDB Customer Dashboard
+ 🚀 Next.js MongoDB Customer Dashboard
 
 A full-stack customer management dashboard built with Next.js and MongoDB Atlas.
 This project demonstrates modern web development practices including API integration, database persistence, and responsive UI design.
