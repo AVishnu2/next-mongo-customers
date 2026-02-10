@@ -51,6 +51,7 @@ MongoDB Compass
 Clone the repository:
 
 git clone https://github.com/YOUR-USERNAME/next-mongo-customers.git
+
 cd next-mongo-customers
 
 Install dependencies:
