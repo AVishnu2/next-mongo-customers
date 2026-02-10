@@ -6,18 +6,24 @@ import styles from "./page.module.css";
 export default function Home() {
   const [customers, setCustomers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch("/api/customers")
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to fetch');
+        return res.json();
+      })
       .then(data => {
-        setCustomers(data);
-        setLoading(false);
+        setCustomers(data || []);
+        setError(null);
       })
       .catch(err => {
         console.error("Error fetching customers:", err);
+        setError("Failed to load customers");
         setLoading(false);
-      });
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   return (
@@ -35,6 +41,11 @@ export default function Home() {
             <div className={styles.spinner}></div>
             <p>Loading customers...</p>
           </div>
+        ) : error ? (
+          <div className={styles.emptyState}>
+            <p className={styles.emptyTitle}>Unable to load customers</p>
+            <p className={styles.emptyText}>{error}</p>
+          </div>
         ) : customers.length === 0 ? (
           <div className={styles.emptyState}>
             <p className={styles.emptyTitle}>No customers yet</p>
@@ -45,7 +56,9 @@ export default function Home() {
             {customers.map(user => (
               <div key={user._id} className={styles.card}>
                 <div className={styles.cardHeader}>
-                  <div className={styles.avatar}>{user.name.charAt(0).toUpperCase()}</div>
+                  <div className={styles.avatar}>
+                    {user.name.charAt(0).toUpperCase()}
+                  </div>
                   <div className={styles.cardMeta}>
                     <h3 className={styles.cardTitle}>{user.name}</h3>
                     <p className={styles.cardId}>ID: {user._id.substring(0, 8)}...</p>
