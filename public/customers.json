@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Rajesh Sharma", "email": "rajesh.sharma@example.in", "phone": "+91-9876543210", "city": "Mumbai" },
+  { "id": 2, "name": "Priya Verma", "email": "priya.verma@example.in", "phone": "+91-9123456780", "city": "Delhi" },
+  { "id": 3, "name": "Aarav Patel", "email": "aarav.patel@example.in", "phone": "+91-9988776655", "city": "Ahmedabad" },
+  { "id": 4, "name": "Sneha Gupta", "email": "sneha.gupta@example.in", "phone": "+91-9012345678", "city": "Kolkata" },
+  { "id": 5, "name": "Vikram Singh", "email": "vikram.singh@example.in", "phone": "+91-9567123490", "city": "Chandigarh" },
+  { "id": 6, "name": "Anjali Rao", "email": "anjali.rao@example.in", "phone": "+91-9445566778", "city": "Bangalore" },
+  { "id": 7, "name": "Rohit Mehta", "email": "rohit.mehta@example.in", "phone": "+91-9701234567", "city": "Pune" },
+  { "id": 8, "name": "Pooja Nair", "email": "pooja.nair@example.in", "phone": "+91-9890011223", "city": "Thiruvananthapuram" },
+  { "id": 9, "name": "Karan Desai", "email": "karan.desai@example.in", "phone": "+91-9823344556", "city": "Surat" },
+  { "id": 10, "name": "Deepa Iyer", "email": "deepa.iyer@example.in", "phone": "+91-9612347800", "city": "Chennai" }
+]
