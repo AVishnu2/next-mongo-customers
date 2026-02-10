@@ -46,29 +46,6 @@ Vercel deployment
 
 MongoDB Compass
 
-⚙ Installation & Setup
-
-Clone the repository:
-
-git clone https://github.com/YOUR-USERNAME/next-mongo-customers.git
-
-cd next-mongo-customers
-
-Install dependencies:
-
-npm install
-
-Create environment file:
-
-.env.local
-
-Add your MongoDB connection string:
-
-MONGODB_URI=your_connection_string_here
-
-Run development server:
-
-npm run dev
 
 Open:
 
