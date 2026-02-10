@@ -69,6 +69,10 @@ Run development server:
 
 npm run dev
 
+Open:
+
+http://localhost:3000
+
 👨‍💻 Author
 
 Vishnu Vardhan
@@ -77,7 +81,3 @@ Aspiring Full Stack Developer
 GitHub:(https://github.com/AVishnu2)
 Email : vishnuanthati2004@gmail.com
 Linkedin Id : https://www.linkedin.com/in/vishnu6666/
-
-Open:
-
-http://localhost:3000
