@@ -38,18 +38,14 @@ Database
 
 MongoDB Atlas (cloud)
 
-Tools
-
-Git & GitHub
-
-Vercel deployment
-
-MongoDB Compass
-
-
 Open:
 
 http://localhost:3000
+
+Output
+
+<img width="1906" height="969" alt="image" src="https://github.com/user-attachments/assets/aa84c577-2d0d-483f-b86f-d76d1270ae0d" />
+
 
 👨‍💻 Author
 
