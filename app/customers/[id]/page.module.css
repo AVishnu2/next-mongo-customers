@@ -51,6 +51,22 @@
     font-size: 1.1rem;
 }
 
+.editBtn {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--foreground);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.editBtn:hover {
+    background-color: var(--background);
+    text-decoration: none;
+}
+
 .card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);

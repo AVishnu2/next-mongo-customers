@@ -45,10 +45,13 @@ export default async function CustomerPage({ params }) {
 
             <div className={styles.header}>
                 <div className={styles.avatarLarge}>{initials}</div>
-                <div>
+                <div style={{ flex: 1 }}>
                     <h1 className={styles.name}>{customer.name}</h1>
                     <p className={styles.email}>{customer.email}</p>
                 </div>
+                <Link href={`/customers/${id}/edit`} className={styles.editBtn}>
+                    Edit
+                </Link>
             </div>
 
             <div className={styles.card}>
